@@ -4,9 +4,9 @@ import random
 from pymongo import *
 
 app = Flask(__name__)
-client = MongoClient('192.168.150.133', 27017)
-db = client['ship_database']
-coordinates = db['coordinates']
+client = MongoClient('127.0.0.1', 27017)
+db = client.ship_database
+coordinates = db.coordinates
 
 def RandomShip():
        global ship_X, ship_Y, won
