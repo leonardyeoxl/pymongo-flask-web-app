@@ -1,0 +1,13 @@
+<html>
+	<body>
+		<img src="{{ url_for('static', filename = 'winner.jpg') }}" alt = "YOU WON!!!">
+	</body>
+	<table>
+		{%for data in coords%}
+		<tr>
+			<td>X: {{data.X}}</td>
+			<td>Y: {{data.Y}}</td>
+		</tr>
+		{%endfor%}
+	</table>
+</html>

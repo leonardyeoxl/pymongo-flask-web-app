@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<table>
+            {%for row in grid%}
+            <tr>
+                {%for item in row%}
+                <td>{{item}}</td>
+                {%endfor%}
+            </tr>
+            {%endfor%}
+        </table>
+        <form action="/calculate" method="post">
+            <input name="X" placeholder="input X">
+            <input name="Y" placeholder="input Y">
+            <input type="submit" value="Submit">
+        </form>
+	</body>
+</html>
